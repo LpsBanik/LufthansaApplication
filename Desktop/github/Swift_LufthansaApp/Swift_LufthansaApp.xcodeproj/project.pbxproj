@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3226153F1FD7FE81004D2FEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226153E1FD7FE81004D2FEE /* AppDelegate.swift */; };
+		322615421FD7FE81004D2FEE /* Swift_LufthansaApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 322615401FD7FE81004D2FEE /* Swift_LufthansaApp.xcdatamodeld */; };
+		322615441FD7FE81004D2FEE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322615431FD7FE81004D2FEE /* MasterViewController.swift */; };
+		322615461FD7FE81004D2FEE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322615451FD7FE81004D2FEE /* DetailViewController.swift */; };
+		322615491FD7FE81004D2FEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322615471FD7FE81004D2FEE /* Main.storyboard */; };
+		3226154B1FD7FE81004D2FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3226154A1FD7FE81004D2FEE /* Assets.xcassets */; };
+		3226154E1FD7FE81004D2FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3226154C1FD7FE81004D2FEE /* LaunchScreen.storyboard */; };
+		322615591FD7FE82004D2FEE /* Swift_LufthansaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322615581FD7FE82004D2FEE /* Swift_LufthansaAppUITests.swift */; };
+		32C1832A1FD804B500A26F0B /* CDAirport+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C183241FD804B500A26F0B /* CDAirport+CoreDataProperties.swift */; };
+		32C1832B1FD804B500A26F0B /* CDAirport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C183251FD804B500A26F0B /* CDAirport.swift */; };
+		32C1832C1FD804B500A26F0B /* CDCity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C183261FD804B500A26F0B /* CDCity+CoreDataProperties.swift */; };
+		32C1832D1FD804B500A26F0B /* CDCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C183271FD804B500A26F0B /* CDCity.swift */; };
+		32C1832E1FD804B500A26F0B /* CDCountry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C183281FD804B500A26F0B /* CDCountry+CoreDataProperties.swift */; };
+		32C1832F1FD804B500A26F0B /* CDCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C183291FD804B500A26F0B /* CDCountry.swift */; };
+		32C183551FD80D9500A26F0B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C183341FD80D9500A26F0B /* AFHTTPSessionManager.m */; };
+		32C183561FD80D9500A26F0B /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C183371FD80D9500A26F0B /* AFNetworkReachabilityManager.m */; };
+		32C183571FD80D9500A26F0B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C183391FD80D9500A26F0B /* AFSecurityPolicy.m */; };
+		32C183581FD80D9500A26F0B /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C1833B1FD80D9500A26F0B /* AFURLRequestSerialization.m */; };
+		32C183591FD80D9500A26F0B /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C1833D1FD80D9500A26F0B /* AFURLResponseSerialization.m */; };
+		32C1835A1FD80D9500A26F0B /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C1833F1FD80D9500A26F0B /* AFURLSessionManager.m */; };
+		32C1835B1FD80D9500A26F0B /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C183421FD80D9500A26F0B /* AFAutoPurgingImageCache.m */; };
+		32C1835C1FD80D9500A26F0B /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C183441FD80D9500A26F0B /* AFImageDownloader.m */; };
+		32C1835D1FD80D9500A26F0B /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C183461FD80D9500A26F0B /* AFNetworkActivityIndicatorManager.m */; };
+		32C1835E1FD80D9500A26F0B /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C183481FD80D9500A26F0B /* UIActivityIndicatorView+AFNetworking.m */; };
+		32C1835F1FD80D9500A26F0B /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C1834A1FD80D9500A26F0B /* UIButton+AFNetworking.m */; };
+		32C183601FD80D9500A26F0B /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C1834D1FD80D9500A26F0B /* UIImageView+AFNetworking.m */; };
+		32C183611FD80D9500A26F0B /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C183501FD80D9500A26F0B /* UIProgressView+AFNetworking.m */; };
+		32C183621FD80D9500A26F0B /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C183521FD80D9500A26F0B /* UIRefreshControl+AFNetworking.m */; };
+		32C183631FD80D9500A26F0B /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C183541FD80D9500A26F0B /* UIWebView+AFNetworking.m */; };
+		32C1836A1FD8352000A26F0B /* BaseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C183691FD8352000A26F0B /* BaseDataManager.swift */; };
+		32C1836C1FD8354100A26F0B /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1836B1FD8354100A26F0B /* ServerManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		322615551FD7FE82004D2FEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 322615331FD7FE81004D2FEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3226153A1FD7FE81004D2FEE;
+			remoteInfo = Swift_LufthansaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3226153B1FD7FE81004D2FEE /* Swift_LufthansaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_LufthansaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3226153E1FD7FE81004D2FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		322615411FD7FE81004D2FEE /* Swift_LufthansaApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swift_LufthansaApp.xcdatamodel; sourceTree = "<group>"; };
+		322615431FD7FE81004D2FEE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		322615451FD7FE81004D2FEE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		322615481FD7FE81004D2FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3226154A1FD7FE81004D2FEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3226154D1FD7FE81004D2FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3226154F1FD7FE81004D2FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322615541FD7FE82004D2FEE /* Swift_LufthansaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_LufthansaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		322615581FD7FE82004D2FEE /* Swift_LufthansaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_LufthansaAppUITests.swift; sourceTree = "<group>"; };
+		3226155A1FD7FE82004D2FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32C183241FD804B500A26F0B /* CDAirport+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CDAirport+CoreDataProperties.swift"; path = "Models/CDAirport+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		32C183251FD804B500A26F0B /* CDAirport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CDAirport.swift; path = Models/CDAirport.swift; sourceTree = SOURCE_ROOT; };
+		32C183261FD804B500A26F0B /* CDCity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CDCity+CoreDataProperties.swift"; path = "Models/CDCity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		32C183271FD804B500A26F0B /* CDCity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CDCity.swift; path = Models/CDCity.swift; sourceTree = SOURCE_ROOT; };
+		32C183281FD804B500A26F0B /* CDCountry+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CDCountry+CoreDataProperties.swift"; path = "Models/CDCountry+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		32C183291FD804B500A26F0B /* CDCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CDCountry.swift; path = Models/CDCountry.swift; sourceTree = SOURCE_ROOT; };
+		32C183331FD80D9500A26F0B /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		32C183341FD80D9500A26F0B /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		32C183351FD80D9500A26F0B /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		32C183361FD80D9500A26F0B /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		32C183371FD80D9500A26F0B /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		32C183381FD80D9500A26F0B /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		32C183391FD80D9500A26F0B /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		32C1833A1FD80D9500A26F0B /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		32C1833B1FD80D9500A26F0B /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		32C1833C1FD80D9500A26F0B /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		32C1833D1FD80D9500A26F0B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		32C1833E1FD80D9500A26F0B /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		32C1833F1FD80D9500A26F0B /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		32C183411FD80D9500A26F0B /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
+		32C183421FD80D9500A26F0B /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
+		32C183431FD80D9500A26F0B /* AFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
+		32C183441FD80D9500A26F0B /* AFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
+		32C183451FD80D9500A26F0B /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		32C183461FD80D9500A26F0B /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		32C183471FD80D9500A26F0B /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		32C183481FD80D9500A26F0B /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		32C183491FD80D9500A26F0B /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		32C1834A1FD80D9500A26F0B /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		32C1834B1FD80D9500A26F0B /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		32C1834C1FD80D9500A26F0B /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		32C1834D1FD80D9500A26F0B /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		32C1834E1FD80D9500A26F0B /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		32C1834F1FD80D9500A26F0B /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		32C183501FD80D9500A26F0B /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		32C183511FD80D9500A26F0B /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		32C183521FD80D9500A26F0B /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		32C183531FD80D9500A26F0B /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		32C183541FD80D9500A26F0B /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		32C183691FD8352000A26F0B /* BaseDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDataManager.swift; sourceTree = "<group>"; };
+		32C1836B1FD8354100A26F0B /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		322615381FD7FE81004D2FEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322615511FD7FE82004D2FEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		322615321FD7FE81004D2FEE = {
+			isa = PBXGroup;
+			children = (
+				3226153D1FD7FE81004D2FEE /* Swift_LufthansaApp */,
+				322615571FD7FE82004D2FEE /* Swift_LufthansaAppUITests */,
+				3226153C1FD7FE81004D2FEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3226153C1FD7FE81004D2FEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3226153B1FD7FE81004D2FEE /* Swift_LufthansaApp.app */,
+				322615541FD7FE82004D2FEE /* Swift_LufthansaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3226153D1FD7FE81004D2FEE /* Swift_LufthansaApp */ = {
+			isa = PBXGroup;
+			children = (
+				32C183681FD8340400A26F0B /* Managers */,
+				32C183311FD80BDE00A26F0B /* Libs */,
+				32C183301FD8050400A26F0B /* Models */,
+				3226153E1FD7FE81004D2FEE /* AppDelegate.swift */,
+				322615431FD7FE81004D2FEE /* MasterViewController.swift */,
+				322615451FD7FE81004D2FEE /* DetailViewController.swift */,
+				322615471FD7FE81004D2FEE /* Main.storyboard */,
+				3226154A1FD7FE81004D2FEE /* Assets.xcassets */,
+				3226154C1FD7FE81004D2FEE /* LaunchScreen.storyboard */,
+				3226154F1FD7FE81004D2FEE /* Info.plist */,
+				322615401FD7FE81004D2FEE /* Swift_LufthansaApp.xcdatamodeld */,
+			);
+			path = Swift_LufthansaApp;
+			sourceTree = "<group>";
+		};
+		322615571FD7FE82004D2FEE /* Swift_LufthansaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				322615581FD7FE82004D2FEE /* Swift_LufthansaAppUITests.swift */,
+				3226155A1FD7FE82004D2FEE /* Info.plist */,
+			);
+			path = Swift_LufthansaAppUITests;
+			sourceTree = "<group>";
+		};
+		32C183301FD8050400A26F0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32C183291FD804B500A26F0B /* CDCountry.swift */,
+				32C183281FD804B500A26F0B /* CDCountry+CoreDataProperties.swift */,
+				32C183271FD804B500A26F0B /* CDCity.swift */,
+				32C183261FD804B500A26F0B /* CDCity+CoreDataProperties.swift */,
+				32C183251FD804B500A26F0B /* CDAirport.swift */,
+				32C183241FD804B500A26F0B /* CDAirport+CoreDataProperties.swift */,
+			);
+			name = Models;
+			path = ../Models;
+			sourceTree = "<group>";
+		};
+		32C183311FD80BDE00A26F0B /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				32C183321FD80D9500A26F0B /* AFNetworking */,
+				32C183401FD80D9500A26F0B /* UIKit+AFNetworking */,
+			);
+			name = Libs;
+			path = ../Libs;
+			sourceTree = "<group>";
+		};
+		32C183321FD80D9500A26F0B /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				32C183331FD80D9500A26F0B /* AFHTTPSessionManager.h */,
+				32C183341FD80D9500A26F0B /* AFHTTPSessionManager.m */,
+				32C183351FD80D9500A26F0B /* AFNetworking.h */,
+				32C183361FD80D9500A26F0B /* AFNetworkReachabilityManager.h */,
+				32C183371FD80D9500A26F0B /* AFNetworkReachabilityManager.m */,
+				32C183381FD80D9500A26F0B /* AFSecurityPolicy.h */,
+				32C183391FD80D9500A26F0B /* AFSecurityPolicy.m */,
+				32C1833A1FD80D9500A26F0B /* AFURLRequestSerialization.h */,
+				32C1833B1FD80D9500A26F0B /* AFURLRequestSerialization.m */,
+				32C1833C1FD80D9500A26F0B /* AFURLResponseSerialization.h */,
+				32C1833D1FD80D9500A26F0B /* AFURLResponseSerialization.m */,
+				32C1833E1FD80D9500A26F0B /* AFURLSessionManager.h */,
+				32C1833F1FD80D9500A26F0B /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		32C183401FD80D9500A26F0B /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				32C183411FD80D9500A26F0B /* AFAutoPurgingImageCache.h */,
+				32C183421FD80D9500A26F0B /* AFAutoPurgingImageCache.m */,
+				32C183431FD80D9500A26F0B /* AFImageDownloader.h */,
+				32C183441FD80D9500A26F0B /* AFImageDownloader.m */,
+				32C183451FD80D9500A26F0B /* AFNetworkActivityIndicatorManager.h */,
+				32C183461FD80D9500A26F0B /* AFNetworkActivityIndicatorManager.m */,
+				32C183471FD80D9500A26F0B /* UIActivityIndicatorView+AFNetworking.h */,
+				32C183481FD80D9500A26F0B /* UIActivityIndicatorView+AFNetworking.m */,
+				32C183491FD80D9500A26F0B /* UIButton+AFNetworking.h */,
+				32C1834A1FD80D9500A26F0B /* UIButton+AFNetworking.m */,
+				32C1834B1FD80D9500A26F0B /* UIImage+AFNetworking.h */,
+				32C1834C1FD80D9500A26F0B /* UIImageView+AFNetworking.h */,
+				32C1834D1FD80D9500A26F0B /* UIImageView+AFNetworking.m */,
+				32C1834E1FD80D9500A26F0B /* UIKit+AFNetworking.h */,
+				32C1834F1FD80D9500A26F0B /* UIProgressView+AFNetworking.h */,
+				32C183501FD80D9500A26F0B /* UIProgressView+AFNetworking.m */,
+				32C183511FD80D9500A26F0B /* UIRefreshControl+AFNetworking.h */,
+				32C183521FD80D9500A26F0B /* UIRefreshControl+AFNetworking.m */,
+				32C183531FD80D9500A26F0B /* UIWebView+AFNetworking.h */,
+				32C183541FD80D9500A26F0B /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		32C183681FD8340400A26F0B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				32C183691FD8352000A26F0B /* BaseDataManager.swift */,
+				32C1836B1FD8354100A26F0B /* ServerManager.swift */,
+			);
+			name = Managers;
+			path = ../Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3226153A1FD7FE81004D2FEE /* Swift_LufthansaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3226155D1FD7FE82004D2FEE /* Build configuration list for PBXNativeTarget "Swift_LufthansaApp" */;
+			buildPhases = (
+				322615371FD7FE81004D2FEE /* Sources */,
+				322615381FD7FE81004D2FEE /* Frameworks */,
+				322615391FD7FE81004D2FEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swift_LufthansaApp;
+			productName = Swift_LufthansaApp;
+			productReference = 3226153B1FD7FE81004D2FEE /* Swift_LufthansaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		322615531FD7FE82004D2FEE /* Swift_LufthansaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322615601FD7FE82004D2FEE /* Build configuration list for PBXNativeTarget "Swift_LufthansaAppUITests" */;
+			buildPhases = (
+				322615501FD7FE82004D2FEE /* Sources */,
+				322615511FD7FE82004D2FEE /* Frameworks */,
+				322615521FD7FE82004D2FEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				322615561FD7FE82004D2FEE /* PBXTargetDependency */,
+			);
+			name = Swift_LufthansaAppUITests;
+			productName = Swift_LufthansaAppUITests;
+			productReference = 322615541FD7FE82004D2FEE /* Swift_LufthansaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		322615331FD7FE81004D2FEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Siarhei Kokhan";
+				TargetAttributes = {
+					3226153A1FD7FE81004D2FEE = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5VP2XARCD7;
+					};
+					322615531FD7FE82004D2FEE = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5VP2XARCD7;
+						TestTargetID = 3226153A1FD7FE81004D2FEE;
+					};
+				};
+			};
+			buildConfigurationList = 322615361FD7FE81004D2FEE /* Build configuration list for PBXProject "Swift_LufthansaApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 322615321FD7FE81004D2FEE;
+			productRefGroup = 3226153C1FD7FE81004D2FEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3226153A1FD7FE81004D2FEE /* Swift_LufthansaApp */,
+				322615531FD7FE82004D2FEE /* Swift_LufthansaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		322615391FD7FE81004D2FEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3226154E1FD7FE81004D2FEE /* LaunchScreen.storyboard in Resources */,
+				3226154B1FD7FE81004D2FEE /* Assets.xcassets in Resources */,
+				322615491FD7FE81004D2FEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322615521FD7FE82004D2FEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		322615371FD7FE81004D2FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322615421FD7FE81004D2FEE /* Swift_LufthansaApp.xcdatamodeld in Sources */,
+				3226153F1FD7FE81004D2FEE /* AppDelegate.swift in Sources */,
+				32C183621FD80D9500A26F0B /* UIRefreshControl+AFNetworking.m in Sources */,
+				32C1835F1FD80D9500A26F0B /* UIButton+AFNetworking.m in Sources */,
+				32C183611FD80D9500A26F0B /* UIProgressView+AFNetworking.m in Sources */,
+				32C1835B1FD80D9500A26F0B /* AFAutoPurgingImageCache.m in Sources */,
+				32C1832C1FD804B500A26F0B /* CDCity+CoreDataProperties.swift in Sources */,
+				32C1835D1FD80D9500A26F0B /* AFNetworkActivityIndicatorManager.m in Sources */,
+				32C1832F1FD804B500A26F0B /* CDCountry.swift in Sources */,
+				32C1835E1FD80D9500A26F0B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				32C183591FD80D9500A26F0B /* AFURLResponseSerialization.m in Sources */,
+				32C183601FD80D9500A26F0B /* UIImageView+AFNetworking.m in Sources */,
+				32C1832B1FD804B500A26F0B /* CDAirport.swift in Sources */,
+				32C183581FD80D9500A26F0B /* AFURLRequestSerialization.m in Sources */,
+				32C183551FD80D9500A26F0B /* AFHTTPSessionManager.m in Sources */,
+				32C1832A1FD804B500A26F0B /* CDAirport+CoreDataProperties.swift in Sources */,
+				32C1835A1FD80D9500A26F0B /* AFURLSessionManager.m in Sources */,
+				32C1835C1FD80D9500A26F0B /* AFImageDownloader.m in Sources */,
+				322615441FD7FE81004D2FEE /* MasterViewController.swift in Sources */,
+				32C1832E1FD804B500A26F0B /* CDCountry+CoreDataProperties.swift in Sources */,
+				32C183571FD80D9500A26F0B /* AFSecurityPolicy.m in Sources */,
+				322615461FD7FE81004D2FEE /* DetailViewController.swift in Sources */,
+				32C1836A1FD8352000A26F0B /* BaseDataManager.swift in Sources */,
+				32C183631FD80D9500A26F0B /* UIWebView+AFNetworking.m in Sources */,
+				32C183561FD80D9500A26F0B /* AFNetworkReachabilityManager.m in Sources */,
+				32C1836C1FD8354100A26F0B /* ServerManager.swift in Sources */,
+				32C1832D1FD804B500A26F0B /* CDCity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322615501FD7FE82004D2FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322615591FD7FE82004D2FEE /* Swift_LufthansaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		322615561FD7FE82004D2FEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3226153A1FD7FE81004D2FEE /* Swift_LufthansaApp */;
+			targetProxy = 322615551FD7FE82004D2FEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		322615471FD7FE81004D2FEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				322615481FD7FE81004D2FEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3226154C1FD7FE81004D2FEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3226154D1FD7FE81004D2FEE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3226155B1FD7FE82004D2FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3226155C1FD7FE82004D2FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3226155E1FD7FE82004D2FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Swift_LufthansaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skokhan.Swift-LufthansaApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3226155F1FD7FE82004D2FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Swift_LufthansaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skokhan.Swift-LufthansaApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+		322615611FD7FE82004D2FEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Swift_LufthansaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skokhan.Swift-LufthansaAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Swift_LufthansaApp;
+			};
+			name = Debug;
+		};
+		322615621FD7FE82004D2FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Swift_LufthansaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skokhan.Swift-LufthansaAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Swift_LufthansaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		322615361FD7FE81004D2FEE /* Build configuration list for PBXProject "Swift_LufthansaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3226155B1FD7FE82004D2FEE /* Debug */,
+				3226155C1FD7FE82004D2FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3226155D1FD7FE82004D2FEE /* Build configuration list for PBXNativeTarget "Swift_LufthansaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3226155E1FD7FE82004D2FEE /* Debug */,
+				3226155F1FD7FE82004D2FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		322615601FD7FE82004D2FEE /* Build configuration list for PBXNativeTarget "Swift_LufthansaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322615611FD7FE82004D2FEE /* Debug */,
+				322615621FD7FE82004D2FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		322615401FD7FE81004D2FEE /* Swift_LufthansaApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				322615411FD7FE81004D2FEE /* Swift_LufthansaApp.xcdatamodel */,
+			);
+			currentVersion = 322615411FD7FE81004D2FEE /* Swift_LufthansaApp.xcdatamodel */;
+			path = Swift_LufthansaApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 322615331FD7FE81004D2FEE /* Project object */;
+}

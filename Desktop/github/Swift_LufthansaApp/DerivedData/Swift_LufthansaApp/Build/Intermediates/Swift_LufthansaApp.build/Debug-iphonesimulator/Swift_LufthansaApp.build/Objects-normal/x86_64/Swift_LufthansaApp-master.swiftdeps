@@ -1,0 +1,13 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "bcacb440dce7e454ebfaf1a32ec6db61"
+build_time: [565877717, 785974000]
+inputs:
+  "/Users/Siarheikokhan/Desktop/Swift_LufthansaApp/Swift_LufthansaApp/AppDelegate.swift": !dirty [565876373, 0]
+  "/Users/Siarheikokhan/Desktop/Swift_LufthansaApp/Models/CDCity.swift": !dirty [565873076, 0]
+  "/Users/Siarheikokhan/Desktop/Swift_LufthansaApp/Models/Country.swift": !dirty [565875140, 0]
+  "/Users/Siarheikokhan/Desktop/Swift_LufthansaApp/Models/Airport.swift": !dirty [565875140, 0]
+  "/Users/Siarheikokhan/Desktop/Swift_LufthansaApp/Models/CDAirport.swift": !dirty [565873076, 0]
+  "/Users/Siarheikokhan/Desktop/Swift_LufthansaApp/Swift_LufthansaApp/MasterViewController.swift": !dirty [565871489, 0]
+  "/Users/Siarheikokhan/Desktop/Swift_LufthansaApp/Models/CDCountry.swift": !dirty [565873076, 0]
+  "/Users/Siarheikokhan/Desktop/Swift_LufthansaApp/Swift_LufthansaApp/DetailViewController.swift": !dirty [565871489, 0]
+  "/Users/Siarheikokhan/Desktop/Swift_LufthansaApp/Models/City.swift": !dirty [565875140, 0]
