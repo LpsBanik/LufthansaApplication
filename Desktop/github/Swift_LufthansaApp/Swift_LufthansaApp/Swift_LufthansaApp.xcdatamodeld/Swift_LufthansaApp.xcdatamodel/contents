@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G1510" minimumToolsVersion="Automatic">
-    <entity name="CDAirport" representedClassName="CDAirport" syncable="YES">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDAirport" representedClassName="Airport" syncable="YES">
         <attribute name="airportCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="airportName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cityCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
-    <entity name="CDCity" representedClassName="CDCity" syncable="YES">
+    <entity name="CDCity" representedClassName="City" syncable="YES">
         <attribute name="cityCode" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="CDCountry" representedClassName="CDCountry">
+    <entity name="CDCountry" representedClassName="Country" syncable="YES">
         <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="countryName" optional="YES" attributeType="String">
-            <userInfo/>
-        </attribute>
-        <userInfo/>
-    </entity>
-    <entity name="Ddfsd" representedClassName="Ddfsd" syncable="YES">
-        <attribute name="sfsdf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CDAirport" positionX="-2502" positionY="-1368" width="128" height="133"/>
-        <element name="CDCity" positionX="-2502" positionY="-1449" width="128" height="73"/>
-        <element name="CDCountry" positionX="-2502" positionY="-1521" width="128" height="73"/>
-        <element name="Ddfsd" positionX="-2628" positionY="-1611" width="128" height="58"/>
+        <element name="CDCountry" positionX="-47" positionY="-171" width="128" height="73"/>
+        <element name="CDCity" positionX="-47" positionY="-99" width="128" height="73"/>
+        <element name="CDAirport" positionX="-47" positionY="-27" width="128" height="133"/>
     </elements>
 </model>

@@ -7,20 +7,7 @@
 		<key>Swift_LufthansaApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>3226153A1FD7FE81004D2FEE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>322615531FD7FE82004D2FEE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
+			<integer>2</integer>
 		</dict>
 	</dict>
 </dict>
